@@ -1,4 +1,13 @@
 <app-header></app-header>
 <div class="grid">
-<app-card *ngFor="let card of ArregloTarjetas"></app-card>
+<app-card [dataEntrante]="card" *ngFor="let card of ArregloTarjetas"></app-card>
+<h3>{{nombre}}</h3>
+<input type="text" class="form-control" [placeholder]="textPlaceHolder" [disabled]="deshabilitado"><br>
+<h3>{{texto}}</h3>
+<button class="btn btn-primary"(click)="cambiarTexto()">hacer click para ver la magia</button>
+<br>
+<div class="container">
+    <input type="text" class="form-control" placeholder="Escriba algo positivo sobre los dibujos...... " [(ngModel)]="texto2"><br>
+    <h3>{{texto2}}</h3>
+</div>
 </div>

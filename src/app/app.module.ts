@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SlidebarComponent } from './slidebar/slidebar.component';
 import { CardComponent } from './card/card.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,9 @@ import { CardComponent } from './card/card.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
